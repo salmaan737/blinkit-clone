@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    position: sticky;
+    background-color: white;
+    height: 85px;
+    top: 0px;
+    box-sizing: border-box;/*box-sizing: border-box = padding and border are included in the width and height */
+}
+.vertical-line{
+    border-left: 1px solid rgb(238, 238, 238); ;
+    height: 100%;
+}
+.location p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.search-bar{
+    background-color:#f8f8f8 ;
+    padding:10px;
+    border-radius: 7px;
+    border: 1px solid rgb(238, 238, 238) ;
+     width: 40vw;     /* vw =Relative to 1% of the width of the viewport */
+}
+.search-bar input{
+    border: none;
+    width: 90%;
+    background-color: transparent;
+    color: rgb(153,153,153);
+    font-size: 15px;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.my-scroll-list{
+    display: flex;
+    justify-content: center; 
+     align-items: center;
+    margin-inline: auto;    /* The margin-inline property specifies the margin at the start and end in the inline direction*/
+    overflow-x: auto;
+    width: 90%;
+}
+.my-list{
+    width: 100%;
+    display: flex;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+.my-list div{
+    margin: 8px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.my-categories{
+width: 90%;
+margin: auto;
+}
+
+.my-card{
+    width: 180px;
+    box-sizing: border-box;
+}
+.card-time{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    width: fit-content;
+    padding:1px 3px ;
+}
+.product-name{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.product-weight{
+    color:#666666;
+    font-size: 11px;
+}
+.product-price{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 18px;
+}
+.product-btn{
+    border: 1px solid green;
+    color: rgb(49, 134, 22);
+    border-radius: 6px;
+    background-color: rgb(247, 255, 249);
+    width: 66px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+.my-category-row{
+    width: 90%;
+    overflow-x: auto;
+    margin: auto;
+}
+.my-card{
+    margin: 10px;
+}
+.my-category h1{
+margin: 18px 90px;
+font-size: 30px;
+}
+
+
+
+@media only screen and (max-width: 980px) and (min-width: 720px){
+
+    /* nav */
+    .location>h6{
+       font-size: 14px !important;
+    }
+    .location>p {
+        font-size: 12px !important;
+    }
+    .logo>a{
+       width: 75% !important;
+    }
+    .logo>button{
+       font-size: 10px !important;
+       width: 80px !important;
+       height: 40px;
+    }
+   /* special-divs */
+   
+       .product-name {
+               font-size: 9px;
+               height: 19px;
+               margin-top: 3px;
+           }
+       .product-price {
+               font-size: 8px;
+           }
+       .product-btn {
+               width: 38px;
+               height: 23px;
+               font-size: 6px;
+           }
+      .card-time {
+               font-size: 7px;
+               padding: 1px;
+            }
+   }
+   
+   @media only screen and (max-width: 720px) and (min-width: 480px) {
+   
+       .location>h6 {
+           font-size: 10px !important;
+       }
+   
+       .location>p {
+           font-size: 8px !important;
+       }
+       input::placeholder{
+           font-size: 10px;
+       }
+   
+       .logo {
+          display:none;
+       }
+   
+   
+      .logo>button{
+       justify-content: space-around !important;
+      }
+       .logo>button {
+           font-size: 8px !important;
+           width: 60px !important;
+           height: 30px !important;
+           margin: 0 !important;
+           padding: 0 !important;
+       }
+   
+       /* special-divs */
+       .my-card {
+            
+               width: 20% !important;
+               margin-right: 4px !important;
+               padding: 4px !important;
+        }
+   
+       .product-name {
+               font-size: 7px;
+               height: 15px;
+               margin-top: 1px;
+           }
+       .product-weight {
+         font-size: 8px;
+        margin-bottom: 2px;
+     }
+   
+       .product-price {
+           font-size: 8px;
+       }
+   
+       .product-btn {
+           width: 38px;
+           height: 23px;
+           font-size: 6px;
+       }
+   
+       .card-time {
+           font-size: 7px;
+           padding: 1px;
+       }
+       
+   }
+   
+   
+   @media only screen and (max-width: 480px) and (min-width: 317px) {
+       .fa-magnifying-glass{
+           font-size: 8px !important;
+   
+       }
+       input::placeholder{
+           font-size: 8px !important;
+       }
+       .search-bar{
+           margin-top: 8px !important;
+       }
+   
+       .location>h6 {
+           font-size: 10px !important;
+       }
+   
+       .location>p {
+           font-size: 8px !important;
+       }
+   
+       input::placeholder {
+           font-size: 10px;
+       }
+   
+       .logo {
+           display: none;
+       }
+   
+   
+       .logo>button {
+           justify-content: space-around !important;
+           font-size: 8px !important;
+           width: 60px !important;
+           height: 30px !important;
+           margin: 0 !important;
+           padding: 0 !important;
+       }
+   
+       /* special-divs */
+       .my-card {
+   
+           width: 30% !important;
+           margin-right: 4px !important;
+           padding: 4px !important;
+       }
+   
+       .product-name {
+           font-size: 7px;
+           height: 15px;
+           margin-top: 1px;
+       }
+   
+       .product-weight {
+           font-size: 8px;
+           margin-bottom: 2px;
+       }
+   
+       .product-price {
+           font-size: 8px;
+       }
+   
+       .button-btn {
+           width: 38px;
+           height: 23px;
+           font-size: 6px;
+       }
+   
+       .card-time {
+           font-size: 7px;
+           padding: 1px;
+       }
+      
+   
+       .body-container {
+               width: 95vw !important;
+               margin-inline: auto;
+           }
+   
+        .my-scroll-list{
+              width: 92vw !important;
+        }
+   
+        .my-categories{
+           width: 92vw !important;
+        }
+        
+   
+   
+   }
